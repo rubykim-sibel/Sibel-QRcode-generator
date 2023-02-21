@@ -37,4 +37,4 @@ if __name__ == '__main__':
         img = qr.make_image(fill_color="black", back_color="white")
 
         # Save the image to a file
-        img.save("qrcode.png")
+        img.save(f"{env}.png")
