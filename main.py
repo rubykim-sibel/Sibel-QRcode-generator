@@ -17,7 +17,7 @@ def generate_data():
 if __name__ == '__main__':
     # List of .env files to load
     # envs = ['demo', 'dev', 'internal', 'prod', 'rph', 'test']
-    envs = 'demo'
+    envs = ['demo']
 
     # Loop through the files and load the environment variables
     for env in envs:
