@@ -10,7 +10,8 @@ def generate_data(ver):
         "ApiEndpoint": os.getenv("ApiEndpoint"),
         "UserpoolId": os.getenv("UserpoolId"),
         "ClientId": os.getenv("ClientId"),
-        "Version": ver + " " + os.getenv("EnvName").capitalize()
+        "Title": ver + " " + os.getenv("EnvName").capitalize(),
+        "Version": ver
     }
     print(sibel_data)
     return json.dumps(sibel_data)
@@ -19,7 +20,7 @@ def generate_data(ver):
 if __name__ == '__main__':
     # List of .env files to load
     # envs = ['demo', 'dev', 'internal', 'prod', 'rph', 'test']
-    envs = ['demo']
+    envs = ['test']
     version = "v1.0"
 
     # Loop through the files and load the environment variables
